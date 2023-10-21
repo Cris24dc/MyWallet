@@ -1,0 +1,8 @@
+{
+  "root": "static",
+  "headers": {
+    "/images": {
+      "Cache-Control": "max-age=604800"
+    }
+  }
+}
