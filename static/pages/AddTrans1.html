@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../images/logowhite.png" />
+    <title>MyWallet</title>
+    <link rel="stylesheet" href="../css/AddTrans1.css" />
+    <link rel="stylesheet" href="../css/var.css" />
+    <script type="module" src="../scripts/transaction.js"></script>
+  </head>
+  <body>
+
+    <!-- transaction 1 -->
+    <div  class="page transaction-one">
+      <div class="top-con">
+        <p>Add</p>
+        <p>Transacion</p>
+      </div>
+      <div class="main-con">
+        <form class="options-ts1">
+          <input
+            class="selection-ts1"
+            type="radio"
+            id="income"
+            name="option"
+            value="income"
+          />
+          <label class="show-ts1" for="income" id="income-label">
+            <img src="../images/plus.png" alt="" />
+            <p>Income</p>
+          </label>
+          <input
+            class="selection-ts1"
+            type="radio"
+            id="expense"
+            name="option"
+            value="expense"
+          />
+          <label class="show-ts1" for="expense" id="expense-label">
+            <img src="../images/plus.png" alt="" />
+            <p>Expense</p>
+          </label>
+          <input
+            class="selection-ts1"
+            type="radio"
+            id="saving"
+            name="option"
+            value="saving"
+          />
+          <label class="show-ts1" for="saving" id="saving-label">
+            <img src="../images/plus.png" alt="" />
+            <p>Saving</p>
+          </label>
+        </form>
+        <div class="transnav-con-ts1">
+          <!--<button class="button-left">
+                    <img src="../images/arrow-left.png" alt="">
+                    <p>Back</p>
+                </button>-->
+
+            <button class="button-right" id="next-one">
+              <p>Next</p>
+              <img class="next" src="../images/arrow-right.png" alt="" />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- transaction 2 -->
+
+    <div class="page transaction-two" id="dnone">
+      <div class="top-con">
+        <p>Add</p>
+        <p>Transacion</p>
+      </div>
+      <div class="main-con">
+        <form class="options-ts2" id="category-form">
+          <input
+            class="selection-ts2"
+            type="radio"
+            id="food"
+            name="category"
+            value="food"
+          />
+          <label class="show-ts2 Food" for="food">
+            <img src="../images/Expenses/food.png" alt="" />
+          </label>
+
+          <input
+            class="selection-ts2"
+            type="radio"
+            id="transport"
+            name="category"
+            value="transport"
+          />
+          <label class="show-ts2 Transport" for="transport">
+            <img src="../images/Expenses/transport.png" alt="" />
+          </label>
+
+          <input
+            class="selection-ts2"
+            type="radio"
+            id="utility"
+            name="category"
+            value="utility"
+          />
+          <label class="show-ts2 Utility" for="utility">
+            <img src="../images/Expenses/utility.png" alt="" />
+          </label>
+
+          <input
+            class="selection-ts2"
+            type="radio"
+            id="medication"
+            name="category"
+            value="medication"
+          />
+          <label class="show-ts2 Medication" for="medication">
+            <img src="../images/Expenses/medication.png" alt="" />
+          </label>
+
+          <input
+            class="selection-ts2"
+            type="radio"
+            id="clothes"
+            name="category"
+            value="clothes"
+          />
+          <label class="show-ts2 Clothes" for="clothes">
+            <img src="../images/Expenses/clothes.png" alt="" />
+          </label>
+
+          <input
+            class="selection-ts2"
+            type="radio"
+            id="travel"
+            name="category"
+            value="travel"
+          />
+          <label class="show-ts2 Travel" for="travel">
+            <img src="../images/Expenses/travel.png" alt="" />
+          </label>
+
+          <input
+            class="selection-ts2"
+            type="radio"
+            id="insurance"
+            name="category"
+            value="insurance"
+          />
+          <label class="show-ts2 Insurance" for="insurance">
+            <img src="../images/Expenses/insurance.png" alt="" />
+          </label>
+
+          <input
+            class="selection-ts2"
+            type="radio"
+            id="education"
+            name="category"
+            value="education"
+          />
+          <label class="show-ts2 Education" for="education">
+            <img src="../images/Expenses/education.png" alt="" />
+          </label>
+
+          <input
+            class="selection-ts2"
+            type="radio"
+            id="other"
+            name="category"
+            value="other"
+          />
+          <label class="show-ts2 Other" for="other">
+            <img src="../images/Expenses/other.png" alt="" />
+          </label>
+        </form>
+        <div class="transnav-con-ts2">
+            <button class="button-left" id="back-two">
+              <img class="back" src="../images/arrow-left.png" alt="" />
+              <p>Back</p>
+            </button>
+          </a>
+            <button class="button-right" id="next-two">
+              <p>Next</p>
+              <img class="next" src="../images/arrow-right.png" alt="" />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- transaction 3 -->
+
+    <div class="page transaction-three" id="dnone" >
+      <div class="top-con">
+        <p>Add</p>
+        <p>Transacion</p>
+      </div>
+      <div class="main-con">
+        <div class="options-ts3" id="ts3-container">
+          <form class="datecon">
+            <label for="date">Date</label><br />
+            <input type="date" id="date" name="date" />
+          </form>
+          <form class="desccon">
+            <label for="description">Description</label><br />
+            <input type="text" id="description" name="description" />
+          </form>
+          <form class="amcon">
+            <label for="amount">Amount</label><br />
+            <input type="number" id="amount" name="amount" />
+          </form>
+        </div>
+        <div class="transnav-con-ts3">
+            <button class="button-left" id="back-three">
+              <img class="back" src="../images/arrow-left.png" alt="" />
+              <p>Back</p>
+            </button>
+          </a>
+            <button class="button-right" id="done">
+              <p>Done</p>
+              <img class="next" src="../images/arrow-right.png" alt="" />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Nav bar -->
+    <div class="nav-con">
+      <a href="../pages/home.html" class="logo-con">
+        <img src="../images/logo.png" alt="" class="logo-img" />
+        <p class="logo-txt">MyWallet</p>
+      </a>
+      <div class="tabs-con">
+        <a href="../pages/home.html" class="home-link">
+          <img src="../images/home.png" alt="" class="home-img" />
+          <p class="home-txt">Home</p>
+        </a>
+        <a href="../pages/wallet.html" class="wallet-link">
+          <img src="../images/wallet.png" alt="" class="wallet-img" />
+          <p class="wallet-txt">Wallet</p>
+        </a>
+        <a href="../pages/AddTrans1.html" class="add-link">
+          <img src="../images/pluswhite.png" alt="" class="add-link-img" />
+        </a>
+        <a href="../pages/savings.html" class="savings-link">
+          <img src="../images/savings.png" alt="" class="savings-img" />
+          <p class="savings-txt">Savings</p>
+        </a>
+        <a href="../pages/history.html" class="history-link">
+          <img src="../images/history.png" alt="" class="history-img" />
+          <p class="history-txt">History</p>
+        </a>
+      </div>
+      <a href="../pages/AddTrans1.html" class="add-con">
+        <img src="../images/pluswhite.png" alt="" class="add-img" />
+        <p class="add-txt">Add transaction</p>
+      </a>
+    </div>
+  </body>
+</html>

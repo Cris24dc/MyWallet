@@ -1,0 +1,591 @@
+/*page css*/
+
+  .page{
+    background-color: var(--clr-light-gray);
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .page::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /*top*/
+  
+  .top-con {
+    width: 90%;
+    height: 10%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-con p {
+    color: var(--clr-txt-black);
+    font-size: clamp(1.8rem, 1.6rem + .8vw, 2.2rem);
+    font-weight: 600;
+  }
+  
+  /*main*/
+  
+  .main-con {
+    width: 90%;
+    height: 84%;
+    margin-top: 7.5%;
+  }
+
+  .graf-con {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-between;
+  }
+
+  .cats-con {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30%;
+  }
+
+  /*balance*/
+
+  .balance-con {
+    width: 100%;
+    border-radius: 30px;
+    background: var(--clr-grd-purple);
+    padding: 1.4rem;
+  }
+
+  .balance-txt {
+    color: var(--clr-txt-white);
+    font-size: clamp(1.8rem, 1rem + .8vw, 3rem);
+    font-weight: 600;
+  }
+
+  .sum-con {
+    margin-top: .5rem;
+    display: flex;
+  }
+
+  .sum-con p{
+    color: var(--clr-txt-white);
+    font-size: clamp(1.2rem, 1.2rem + .8vw, 1.8rem);
+    font-weight: 500;
+  }
+
+  /*buttons*/
+
+  .buttons-con {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .incomes-button {
+    color: var(--clr-txt-black);
+    background-color:var(--clr-white);
+    border: none;
+    border-radius: 30px;
+    height: 80%;
+    width: 45%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .expenses-button {
+    color: var(--clr-txt-black);
+    background-color:var(--clr-white);
+    border: none;
+    border-radius: 30px;
+    height: 80%;
+    width: 45%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .selected {
+    background: var(--clr-grd-purple);
+    color: var(--clr-txt-white);
+  }
+
+  /*chart*/
+
+  .chart-con {
+    height: 50%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*categories*/
+
+  .cat-txt {
+    color: var(--clr-txt-black);
+    margin-top: 1.6rem;
+    font-size: clamp(1.2rem, 1.2rem + .8vw, 2rem);
+    font-weight: 600;
+  }
+
+  .cat-con {
+    margin-top: 1.6rem;
+    height: 4rem;
+    border-radius: 30px;
+    background-color: var(--clr-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left-con-side {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-con-side {
+    height: 100%;
+    width: 24%;
+    display: flex;
+    align-items: center;
+  }
+
+  .cat-con img {
+    height: 2rem;
+  }
+
+  .cat-con p {
+    color: var(--clr-txt-black);
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .cat-clr-con {
+    padding: .4rem;
+    border-radius: 30px;
+    margin-left: 1.5rem;
+  }
+
+  .cat-name {
+    margin-left: 1rem;
+  }
+
+  .cur {
+    margin-left: .4rem;
+  }
+
+  .Food-con {
+    background-color: var(--clr-food);
+  }
+
+  .Transport-con {
+    background-color: var(--clr-transport);
+  }
+
+  .Utility-con {
+    background-color: var(--clr-utility);
+  }
+
+  .Medication-con{
+    background-color: var(--clr-medication);
+  }
+
+  .Clothes-con {
+    background-color: var(--clr-clothes);
+  }
+
+  .Travel-con {
+    background-color: var(--clr-travel);
+  }
+
+  .Insurance-con {
+    background-color: var(--clr-insurance);
+  }
+
+  .Education-con {
+    background-color: var(--clr-education);
+  }
+
+  .Other-con {
+    background-color: var(--clr-other);
+  }
+
+  .Salary-con{
+    background-color: var(--clr-salary);
+  }
+
+  .Dividend-con{
+    background-color: var(--clr-dividend);
+  }
+
+  .Business-con {
+    background-color: var(--clr-business);
+  }
+
+  .Rental-con{
+    background-color: var(--clr-rental);
+  }
+
+  /*Nav*/
+  
+  .nav-con {
+    background-color: var(--clr-white);
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /*logo*/
+  
+  .logo-con {
+    display: none;
+  }
+  
+  /*tabs*/
+  
+  .tabs-con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .tabs-con img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .tabs-con p {
+    display: none;
+  }
+  
+  /*selected*/
+  .home-link {
+    background-color: var(--clr-light-gray);
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wallet-link {
+    background: var(--clr-grd-purple);
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add-link {
+    background: var(--clr-grd-purple);
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .savings-link {
+    background-color: var(--clr-light-gray);
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .history-link {
+    background-color: var(--clr-light-gray);
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*add*/
+  
+  .add-con {
+    display: none;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .page{
+      height: 100%;
+      width: 85%;
+      margin-left: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+    }
+  
+    /*top*/
+  
+    .top-con {
+      height: 5.5%;
+      margin-top: 0%;
+      justify-content: flex-start;
+    }
+  
+    .top-con p{
+      font-size: clamp(1.2rem, 1rem + .8vw, 1.6rem);
+      font-weight: 500;
+    }
+  
+    /*main*/
+  
+    .main-con {
+      width: 90%;
+      height: 79.5%;
+      margin-top: 3.2%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .graf-con {
+      height: 100%;
+      width: 55%;
+    }
+  
+    .cats-con {
+      background-color: var(--clr-white);
+      border-radius: 30px;
+      height: 100%;
+      width: 35%;
+      padding: 2.5rem;
+    }
+  
+    /*balance*/
+  
+    .balance-con {
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      padding-left: 1.2rem;
+    }
+  
+    .balance-txt {
+      font-size: clamp(1.5rem, 1.6rem + .8vw, 4.2rem);
+    }
+  
+    .sum-con p{
+      font-size: clamp(1.2rem, 1.2rem + .8vw, 2rem);
+    }
+  
+    /*buttons*/
+  
+    .buttons-con {
+      height: 12%;
+    }
+  
+    .incomes-button {
+      font-size: 32px;
+    }
+  
+    .expenses-button {
+      font-size: 32px;
+    }
+  
+    /*chart*/
+  
+    .chart-con {
+      height: 52%;
+      width: 50%;
+    }
+    
+    /*categories*/
+  
+    .cat-txt {
+      font-size: clamp(1.2rem, 1.2rem + .8vw, 2.5rem);
+      margin-bottom: 1rem;
+    }
+  
+    .left-con-side {
+      width: 60%;
+    }
+  
+    .right-con-side {
+      width: 20%;
+    }
+  
+    .cat-con p {
+      font-size: 1.5rem;
+    }
+  
+    .cat-clr-con {
+      margin-left: 0rem;
+    }
+
+    /*Nav*/
+  
+    .nav-con {
+      width: 15%;
+      height: 100%;
+      left: 0;
+      flex-direction: column;
+    }
+
+    /*logo*/
+  
+    .logo-con {
+      display: inline;
+      height: 5.5%;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .logo-img {
+      width: clamp(2rem, 1rem + 2vw, 2.8rem);
+      height: clamp(2rem, 1rem + 2vw, 2.8rem);
+      margin: .5rem;
+    }
+  
+    .logo-txt {
+      font-size: clamp(1.2rem, 1rem + .5vw, 1.8rem);
+      margin: .5rem;
+      font-weight: 600;
+      color: var(--clr-txt-black);
+    }
+  
+    /*tabs*/
+  
+    .tabs-con {
+      width: 80%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  
+    .tabs-con img {
+      margin: .8rem;
+    }
+  
+    .tabs-con p {
+      display: inline;
+      font-size: clamp(.5rem, .6rem + .5vw, 1.5rem);
+      font-weight: 500;
+      margin: .8rem;
+    }
+  
+    /*selected*/
+    .home-link {
+      background-color: var(--clr-light-gray);
+      height: 9%;
+      width: 100%;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  
+    .home-txt {
+      color:var(--clr-txt-black);
+    }
+  
+    .wallet-link {
+      height: 9%;
+      width: 100%;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .wallet-txt {
+      color: var(--clr-txt-white);
+    }
+  
+    .add-link {
+      display: none;
+    }
+  
+    .savings-link {
+      background-color: var(--clr-light-gray);
+      height: 9%;
+      width: 100%;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .savings-txt {
+      color: var(--clr-txt-black);
+    }
+  
+    .history-link {
+      background-color: var(--clr-light-gray);
+      height: 9%;
+      width: 100%;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .history-txt {
+      color: var(--clr-txt-black);
+    }
+  
+  
+    /*add*/
+  
+    .add-con {
+      display: inline;
+      background: var(--clr-grd-purple);
+      height: 5.5%;
+      width: 80%;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .add-img {
+      width: 30px;
+      height: 30px;
+      margin: clamp(.3rem, .2rem + .6vw, 1rem);;
+    }
+    
+    .add-txt {
+      color: var(--clr-txt-white);
+      font-size: clamp(.75rem, .5rem + .5vw, 1.2rem);
+      font-weight: 500;
+      margin: clamp(.3rem, .2rem + .6vw, 1rem);;
+    }
+  }

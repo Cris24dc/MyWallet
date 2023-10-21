@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../images/logowhite.png" />
+    <title>MyWallet</title>
+    <link rel="stylesheet" href="../css/settings.css" />
+    <link rel="stylesheet" href="../css/var.css" />
+    <script type="module" src="../scripts/settings.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="top-con">
+        <p>Settings</p>
+      </div>
+      <div class="main-con">
+        <div class="account-con">
+          <p class="account-txt">Account</p>
+        </div>
+        <div class="account-settings-con">
+          <div class="left-con">
+            <div class="profile-il">
+              <img
+                src="../images/account.png"
+                alt=""
+                class="profile-img"
+              />
+            </div>
+            <div class="profile-name-con">
+              <p class="profile-first-name-txt">Andrei&nbsp</p>
+              <p class="profile-last-name-txt">Cristian</p>
+            </div>
+          </div>
+          <a
+            href="../pages/profile-settings.html"
+            class="profile-settings-button"
+          >
+            <img
+              src="../images/arrow-right.png"
+              alt=""
+              class="profile-settings-img"
+            />
+          </a>
+        </div>
+        <div class="preferences-con">
+          <p class="preferences-txt">Preferences</p>
+        </div>
+        <div class="dark-con">
+          <div class="left-con">
+            <div class="dark-il">
+              <img
+                src="../images/darkmode.png"
+                alt=""
+                class="dark-il-img"
+              />
+            </div>
+            <p class="dark-txt">Dark mode</p>
+          </div>
+          <div class="toggle-switch">
+            <input type="checkbox" id="switch" />
+            <label for="switch">Toggle</label>
+          </div>
+        </div>
+        <div class="currency-con">
+          <div class="left-con">
+            <div class="currency-il">
+              <img
+                src="../images/currency.png"
+                alt=""
+                class="currency-il-img"
+              />
+            </div>
+            <p class="currency-txt">Currency</p>
+          </div>
+          <select id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="RON">RON</option>
+          </select>
+        </div>
+        <div class="logout-con">
+          <div class="left-con">
+            <div class="logout-il">
+              <img
+                src="../images/logout.png"
+                alt=""
+                class="logout-il-img"
+              />
+            </div>
+            <p class="logout-txt">Log out</p>
+          </div>
+          <button class="logout-button">
+            <img
+              src="../images/arrow-right.png"
+              alt=""
+              class="logout-img"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="nav-con">
+      <a href="../pages/home.html" class="logo-con">
+        <img src="../images/logo.png" alt="" class="logo-img" />
+        <p class="logo-txt">MyWallet</p>
+      </a>
+      <div class="tabs-con">
+        <a href="../pages/home.html" class="home-link">
+          <img src="../images/home.png" alt="" class="home-img" />
+          <p class="home-txt">Home</p>
+        </a>
+        <a href="../pages/wallet.html" class="wallet-link">
+          <img src="../images/wallet.png" alt="" class="wallet-img" />
+          <p class="wallet-txt">Wallet</p>
+        </a>
+        <a href="../pages/AddTrans1.html" class="add-link">
+          <img src="../images/pluswhite.png" alt="" class="add-link-img" />
+        </a>
+        <a href="../pages/savings.html" class="savings-link">
+          <img src="../images/savings.png" alt="" class="savings-img" />
+          <p class="savings-txt">Savings</p>
+        </a>
+        <a href="../pages/history.html" class="history-link">
+          <img src="../images/history.png" alt="" class="history-img" />
+          <p class="history-txt">History</p>
+        </a>
+      </div>
+      <a href="../pages/AddTrans1.html" class="add-con">
+        <img src="../images/pluswhite.png" alt="" class="add-img" />
+        <p class="add-txt">Add transaction</p>
+      </a>
+    </div>
+  </body>
+</html>

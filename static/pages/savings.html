@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../images/logowhite.png" />
+    <title>MyWallet</title>
+    <link rel="stylesheet" href="../css/savings.css" />
+    <link rel="stylesheet" href="../css/var.css" />
+    <script type="module" src="../scripts/savings.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="top-con">
+        <p>Savings</p>
+      </div>
+      <div class="main-con">
+        <div class="info-con">
+          <div class="saved-con">
+            <p class="saved-txt">Saved money</p>
+            <div class="sum-con">
+              <p class="sum-txt">0</p>
+              <p class="sum-cur">$</p>
+            </div>
+          </div>
+          <div class="buttons-con">
+            <p>Saving for</p>
+            <button class="edit-button">Edit</button>
+          </div>
+        </div>
+        <div class="cats-con" data-carousel>
+          <button class="left-arrow carousel-button" data-carousel-button="prev">
+            <img src="../images/arrow-left.png" alt="" />
+          </button>
+          <button class="right-arrow carousel-button" data-carousel-button="next">
+            <img src="../images/arrow-right.png" alt="" />
+          </button>
+          <ul data-slides>
+            <!-- data for carousel -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="nav-con">
+      <a href="../pages/home.html" class="logo-con">
+        <img src="../images/logo.png" alt="" class="logo-img" />
+        <p class="logo-txt">MyWallet</p>
+      </a>
+      <div class="tabs-con">
+        <a href="../pages/home.html" class="home-link">
+          <img src="../images/home.png" alt="" class="home-img" />
+          <p class="home-txt">Home</p>
+        </a>
+        <a href="../pages/wallet.html" class="wallet-link">
+          <img src="../images/wallet.png" alt="" class="wallet-img" />
+          <p class="wallet-txt">Wallet</p>
+        </a>
+        <a href="../pages/AddTrans1.html" class="add-link">
+          <img src="../images/pluswhite.png" alt="" class="add-link-img" />
+        </a>
+        <a href="../pages/savings.html" class="savings-link">
+          <img
+            src="../images/savingswhite.png"
+            alt=""
+            class="savings-img"
+          />
+          <p class="savings-txt">Savings</p>
+        </a>
+        <a href="../pages/history.html" class="history-link">
+          <img src="../images/history.png" alt="" class="history-img" />
+          <p class="history-txt">History</p>
+        </a>
+      </div>
+      <a href="../pages/AddTrans1.html" class="add-con">
+        <img src="../images/pluswhite.png" alt="" class="add-img" />
+        <p class="add-txt">Add transaction</p>
+      </a>
+    </div>
+  </body>
+</html>
