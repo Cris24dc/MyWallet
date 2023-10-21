@@ -67,7 +67,7 @@ function createDataForChart(categoriesIncome, categoriesOutcome) {
     dataIncome[i] = categoriesIncome[i].value;
     labelIncome[i] = categoriesIncome[i].name;
     colorIncome[i] = categoriesIncome[i].color;
-    // Update the image path to ../images/name.png
+    // Update the image path to point directly to the root of the images directory
     imageIncome[i] = "../images/" + categoriesIncome[i].image + ".png";
   }
 
@@ -75,7 +75,7 @@ function createDataForChart(categoriesIncome, categoriesOutcome) {
     dataExpense[i] = categoriesOutcome[i].value;
     labelExpense[i] = categoriesOutcome[i].name;
     colorExpense[i] = categoriesOutcome[i].color;
-    // Update the image path to ../images/name.png
+    // Update the image path to point directly to the root of the images directory
     imageExpense[i] = "../images/" + categoriesOutcome[i].image + ".png";
   }
 
