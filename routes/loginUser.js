@@ -1,5 +1,5 @@
 import express from "express";
-import { User, validateUser } from "../models/user.js";
+import { User } from "../models/user.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import Joi from "joi";
@@ -8,7 +8,7 @@ const router = express.Router();
 const JWT_SECRET = "kdhas9opydu91q123j124bmsadajhgjbaseuywgw4";
 
 router.post("/", async (req, res) => {
-  const { error } = validateUser(req.body);
+  const { error } = validate(req.body);
   if (error) return res.json({ status: "error", error: error.message });
 
   const { email, password } = req.body;
@@ -23,7 +23,7 @@ router.post("/", async (req, res) => {
     return res.json({ status: "ok", data: token });
   }
 
-  res.json({ status: "error", error: "Invalid username or password" });
+  res.json({ status: "error", error: "Invalid email or password" });
 });
 
 function validate(req) {
